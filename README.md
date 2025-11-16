@@ -2,7 +2,7 @@
 
 [English](#english)
 
-一键部署，无需配置，支持多环境（dev / prod）Worker 部署。
+一键部署 Next.js 到 Cloudflare Worker，无需配置，支持多环境（dev / prod）Worker 部署。
 
 ### 快速开始
 
@@ -34,23 +34,35 @@ pnpm alchemy configure
 pnpm alchemy login
 ```
 
-#### 部署开发环境
+#### 部署开发环境 Worker
 
 ```bash
 pnpm run deploy:dev
 ```
 
-#### 部署生产环境
+#### 删除开发环境 Worker 
+
+```base
+pnpm run destroy:dev
+```
+
+#### 部署生产环境 Worker
 
 ```bash
 pnpm run deploy:prod
+```
+
+#### 删除生产环境 Worker
+
+```base
+pnpm run destroy:prod
 ```
 
 ---
 
 ## English
 
-Deploy with one click, zero configuration, supports multi-environment (dev / prod) Cloudflare Workers.
+Deploy Next.js to Cloudflare Worker with one click, zero configuration required. Supports multi-environment (dev / prod) Worker deployment.
 
 ### Quick Start
 
@@ -75,21 +87,33 @@ pnpm dev
 
 ### Deployment
 
-#### Configure Cloudflare credentials
+#### Grant Cloudflare permissions
 
 ```bash
 pnpm alchemy configure
 pnpm alchemy login
 ```
 
-#### Deploy to development
+#### Deploy development Worker
 
 ```bash
 pnpm run deploy:dev
 ```
 
-#### Deploy to production
+#### Remove development Worker
+
+```bash
+pnpm run destroy:dev
+```
+
+#### Deploy production Worker
 
 ```bash
 pnpm run deploy:prod
+```
+
+#### Remove production Worker
+
+```bash
+pnpm run destroy:prod
 ```
