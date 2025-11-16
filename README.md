@@ -1,85 +1,95 @@
-# Welcome to Next.js on Cloudflare!
+# Next.js Cloudflare Starter
 
-[![Deployed with Alchemy](https://alchemy.run/alchemy-badge.svg)](https://alchemy.run)
+[English](#english)
 
-A modern, production-ready template for building full-stack React applications using Next.js on Cloudflare Workers.
+一键部署，无需配置，支持多环境（dev / prod）Worker 部署。
 
-## Features
+### 快速开始
 
-- 🚀 Server-side rendering with React Server Components
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization via OpenNext
-- 🔄 Server Actions and API routes
-- 🔒 TypeScript by default
-- 🌐 Cloudflare Workers runtime
-- 📖 [Next.js docs](https://nextjs.org/docs)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
+#### 克隆项目
 
 ```bash
-npm install
+git clone https://github.com/nshen/next-cloudflare-starter.git
+cd next-cloudflare-starter
 ```
 
-### Development
-
-Start the development server with HMR:
+#### 安装依赖
 
 ```bash
-npm run dev
+pnpm install
 ```
 
-Your application will be available at `http://localhost:3000`.
-
-## Building for Production
-
-Create a production build:
+#### 本地开发
 
 ```bash
-npm run build
+pnpm dev
 ```
 
-## Deployment
+### 部署
 
-Deploy to Cloudflare Workers:
+#### 给 Cloudflare 权限
 
 ```bash
-npm run deploy
+pnpm alchemy configure
+pnpm alchemy login
 ```
 
-## Preview
-
-Preview the production build locally:
+#### 部署开发环境
 
 ```bash
-npm run preview
+pnpm run deploy:dev
 ```
 
-## Destroy
-
-Clean up all Cloudflare resources:
+#### 部署生产环境
 
 ```bash
-npm run destroy
+pnpm run deploy:prod
 ```
-
-## Project Structure
-
-- `src/app/` - Next.js App Router pages and components
-- `public/` - Static assets
-- `alchemy.run.ts` - Infrastructure configuration
-- `next.config.ts` - Next.js configuration
-- `open-next.config.ts` - OpenNext configuration for Cloudflare
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Alchemy Documentation](https://alchemy.run)
-- [OpenNext for Cloudflare](https://opennext.js.org/cloudflare)
 
 ---
 
-Built with ❤️ using Next.js and Alchemy.
+## English
+
+Deploy with one click, zero configuration, supports multi-environment (dev / prod) Cloudflare Workers.
+
+### Quick Start
+
+#### Clone the repository
+
+```bash
+git clone https://github.com/nshen/next-cloudflare-starter.git
+cd next-cloudflare-starter
+```
+
+#### Install dependencies
+
+```bash
+pnpm install
+```
+
+#### Local development
+
+```bash
+pnpm dev
+```
+
+### Deployment
+
+#### Configure Cloudflare credentials
+
+```bash
+pnpm alchemy configure
+pnpm alchemy login
+```
+
+#### Deploy to development
+
+```bash
+pnpm run deploy:dev
+```
+
+#### Deploy to production
+
+```bash
+pnpm run deploy:prod
+```
