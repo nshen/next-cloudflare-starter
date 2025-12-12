@@ -1,6 +1,6 @@
 import alchemy from "alchemy";
 import { Nextjs } from "alchemy/cloudflare";
-import pkg from "./package.json";
+import pkg from "./package.json" with { type: "json" };
 
 const app = await alchemy(pkg.name);
 
